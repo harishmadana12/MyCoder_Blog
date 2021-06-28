@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}MyCoder{% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+{% block body %}
+<div class="code">
+  <h1 class="position-absolute top-50 start-50 fs-1 fw-bold translate-middle-x">Welcome to <span
+      class="type text-info"></span></h1>
+</div>
+
+<script src="/static/JScript/typed.min.js"></script>
+<script>
+  var typed = new Typed('.type', {
+    strings: ['MyCoder.', 'Blog For Python.', 'Blog For Django.'],
+    typeSpeed: 90,
+    backspeed: 90,
+    loop: true
+  });
+</script>
+{% endblock body %}
